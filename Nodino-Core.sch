@@ -7877,12 +7877,12 @@ Based on the datasheets for the following products.&lt;br&gt;
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="C6" library="resistor" deviceset="C-EU" device="C0603K" value="22pF"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0603K" value="22pF"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C0603K" value="22pF"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0603K" value="22pF"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="Y1" library="abracon" deviceset="CRYSTAL" device=".ABS07" value="32.768kHz"/>
-<part name="IC3" library="diodes_inc" deviceset="AP7333" device="33SAG"/>
+<part name="Q2" library="abracon" deviceset="CRYSTAL" device=".ABS07" value="32.768kHz"/>
+<part name="IC2" library="diodes_inc" deviceset="AP7333" device="33SAG"/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
@@ -7916,12 +7916,12 @@ Based on the datasheets for the following products.&lt;br&gt;
 <instance part="P+2" gate="1" x="160.02" y="76.2"/>
 <instance part="+3V2" gate="G$1" x="210.82" y="76.2"/>
 <instance part="GND1" gate="1" x="160.02" y="7.62" rot="MR0"/>
-<instance part="C6" gate="G$1" x="22.86" y="22.86"/>
-<instance part="C7" gate="G$1" x="33.02" y="22.86"/>
+<instance part="C4" gate="G$1" x="22.86" y="22.86"/>
+<instance part="C5" gate="G$1" x="33.02" y="22.86"/>
 <instance part="GND12" gate="1" x="22.86" y="7.62" rot="MR0"/>
 <instance part="GND13" gate="1" x="33.02" y="7.62" rot="MR0"/>
-<instance part="Y1" gate="G$1" x="27.94" y="30.48"/>
-<instance part="IC3" gate="G$1" x="35.56" y="55.88" smashed="yes">
+<instance part="Q2" gate="G$1" x="27.94" y="30.48"/>
+<instance part="IC2" gate="G$1" x="35.56" y="55.88" smashed="yes">
 <attribute name="NAME" x="25.4" y="64.77" size="1.778" layer="95"/>
 <attribute name="VALUE" x="25.4" y="62.23" size="1.778" layer="96"/>
 </instance>
@@ -7998,17 +7998,17 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="160.02" y1="17.78" x2="160.02" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="22.86" y1="17.78" x2="22.86" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="GND"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -8053,7 +8053,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <wire x1="210.82" y1="68.58" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="G$1" pin="OUT"/>
+<pinref part="IC2" gate="G$1" pin="OUT"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <wire x1="45.72" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="58.42" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
@@ -8071,7 +8071,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <label x="208.28" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CS1" class="0">
+<net name="CS2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PA5"/>
 <wire x1="53.34" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
@@ -8284,7 +8284,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <label x="208.28" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CS2" class="0">
+<net name="CS1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PA6"/>
 <wire x1="53.34" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
@@ -8415,7 +8415,7 @@ Based on the datasheets for the following products.&lt;br&gt;
 <segment>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="22.86" y1="60.96" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="G$1" pin="IN"/>
+<pinref part="IC2" gate="G$1" pin="IN"/>
 <wire x1="22.86" y1="58.42" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8512,10 +8512,10 @@ Based on the datasheets for the following products.&lt;br&gt;
 </net>
 <net name="32K1" class="0">
 <segment>
-<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="30.48" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="30.48" x2="22.86" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="1"/>
+<pinref part="Q2" gate="G$1" pin="1"/>
 <wire x1="43.18" y1="40.64" x2="22.86" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="40.64" x2="22.86" y2="30.48" width="0.1524" layer="91"/>
 <junction x="22.86" y="30.48"/>
@@ -8529,10 +8529,10 @@ Based on the datasheets for the following products.&lt;br&gt;
 </net>
 <net name="32K2" class="0">
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="30.48" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="2"/>
+<pinref part="Q2" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="38.1" x2="33.02" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="38.1" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <junction x="33.02" y="30.48"/>
