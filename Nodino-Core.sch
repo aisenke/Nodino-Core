@@ -7628,11 +7628,11 @@ Based on the datasheets for the following products.&lt;br&gt;
 <pad name="30" x="-1.27" y="6.35" drill="1.4" diameter="2.1"/>
 <pad name="31" x="-3.81" y="6.35" drill="1.4" diameter="2.1"/>
 <pad name="32" x="-6.35" y="6.35" drill="1.4" diameter="2.1"/>
-<text x="3.81" y="4.445" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TCK</text>
-<text x="1.27" y="4.445" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TDI</text>
-<text x="-1.27" y="4.445" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TDO</text>
-<text x="-3.81" y="4.445" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TMS</text>
-<text x="-6.35" y="4.445" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TRST</text>
+<text x="3.81" y="8.255" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TCK</text>
+<text x="1.27" y="8.255" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TDI</text>
+<text x="-1.27" y="8.255" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TDO</text>
+<text x="-3.81" y="8.255" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TMS</text>
+<text x="-6.35" y="8.255" size="0.762" layer="22" font="vector" ratio="10" rot="MR0" align="top-center">TRST</text>
 </package>
 <package name="NODINO-JTAG-TOP">
 <wire x1="-11.43" y1="-12.7" x2="11.43" y2="-12.7" width="0.127" layer="21"/>
@@ -7706,11 +7706,11 @@ Based on the datasheets for the following products.&lt;br&gt;
 <pad name="30" x="-1.27" y="6.35" drill="1.4" diameter="2.1"/>
 <pad name="31" x="-3.81" y="6.35" drill="1.4" diameter="2.1"/>
 <pad name="32" x="-6.35" y="6.35" drill="1.4" diameter="2.1"/>
-<text x="3.81" y="4.445" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TCK</text>
-<text x="1.27" y="4.445" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TDI</text>
-<text x="-1.27" y="4.445" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TDO</text>
-<text x="-3.81" y="4.445" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TMS</text>
-<text x="-6.35" y="4.445" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TRST</text>
+<text x="3.81" y="8.255" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TCK</text>
+<text x="1.27" y="8.255" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TDI</text>
+<text x="-1.27" y="8.255" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TDO</text>
+<text x="-3.81" y="8.255" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TMS</text>
+<text x="-6.35" y="8.255" size="0.762" layer="21" font="vector" ratio="10" align="top-center">TRST</text>
 </package>
 </packages>
 <symbols>
